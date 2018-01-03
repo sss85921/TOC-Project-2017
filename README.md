@@ -42,10 +42,14 @@ python3 app.py
 ## Usage
 The initial state is set to `user`.
 
-Every time `user` state is triggered to `advance` to another state, it will `go_back` to `user` state after the bot replies corresponding message.
+User can get some informations about three baseball team of Chinese Professional Baseball League.Include the picture of team logo,and the official wedsite of the team which is searched by user.
+
+Input "list team" will show the name of team that user can search for.
+Input team name will get the information about the team.
+Then it will go back to user state after the bot trplies corresponding message.
 
 * user
-	* Input: "list game"
+	* Input: "list team"
 		* Reply: "you can search the official website of three baseball teams.just input 'lions' or 'brothers' or 'lamigo'"
 		* And now you are in state1
 	* Input: "lions"
