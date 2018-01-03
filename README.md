@@ -56,7 +56,7 @@ Every time `user` state is triggered to `advance` to another state, it will `go_
 		* Reply:"here is the website of brothers"
 		* Show a picture of brothers team and there official website URL
 		* And now you are in state3
-    * Input: "lions"
+    * Input: "lamigo"
 		* Reply:"here is the website of lamigo"
 		* Show a picture of lamigo team and there official website URL
 		* And now you are in state4
@@ -67,7 +67,7 @@ Every time `user` state is triggered to `advance` to another state, it will `go_
 	* Input: "brothers"
 		* Reply: Show a picture of brothers team and there official website URL
 		*  And now you are in state3
-    * Input: "lions"
+    * Input: "lamigo"
 		* Reply: Show a picture of lamigo team and there official website URL
 		*  And now you are in state4
 
