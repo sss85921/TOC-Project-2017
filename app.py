@@ -17,8 +17,8 @@ machine = TocMachine(
         'user',
         'state1',
         'state2',
-		'state3',
-		'state4'
+        'state3',
+        'state4'
     ],
     transitions=[
         {
