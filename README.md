@@ -1,6 +1,6 @@
-# TOC Project 2017
+# Final Project F74040018
 
-Template Code for TOC Project 2017
+Theory of computation
 
 A telegram bot based on a finite state machine
 
@@ -16,11 +16,6 @@ pip install -r requirements.txt
 
 * pygraphviz (For visualizing Finite State Machine)
     * [Setup pygraphviz on Ubuntu](http://www.jianshu.com/p/a3da7ecc5303)
-
-### Secret Data
-
-`API_TOKEN` and `WEBHOOK_URL` in app.py **MUST** be set to proper values.
-Otherwise, you might not be able to run your code.
 
 ### Run Locally
 You can either setup https server or using `ngrok` as a proxy.
@@ -50,12 +45,33 @@ The initial state is set to `user`.
 Every time `user` state is triggered to `advance` to another state, it will `go_back` to `user` state after the bot replies corresponding message.
 
 * user
-	* Input: "go to state1"
-		* Reply: "I'm entering state1"
+	* Input: "list game"
+		* Reply: "you can search the official website of three baseball teams.just input 'lions' or 'brothers' or 'lamigo'"
+		* And now you are in state1
+	* Input: "lions"
+		* Reply:"here is the website of lions" 
+		* Show a picture of lions team and there official website URL
+		* And now you are in state2
+	* Input: "brothers"
+		* Reply:"here is the website of brothers"
+		* Show a picture of brothers team and there official website URL
+		* And now you are in state3
+    * Input: "lions"
+		* Reply:"here is the website of lamigo"
+		* Show a picture of lamigo team and there official website URL
+		* And now you are in state4
+* state1
+    * Input: "lions"
+		* Reply: Show a picture of lions team and there official website URL
+		*  And now you are in state2
+	* Input: "brothers"
+		* Reply: Show a picture of brothers team and there official website URL
+		*  And now you are in state3
+    * Input: "lions"
+		* Reply: Show a picture of lamigo team and there official website URL
+		*  And now you are in state4
 
-	* Input: "go to state2"
-		* Reply: "I'm entering state2"
-
-
+* state2, state3, state4
+    * go back to user state automatically
 ## Author
-[Lee-W](https://github.com/Lee-W)
+[anguschiu](https://github.com/sss85921)
